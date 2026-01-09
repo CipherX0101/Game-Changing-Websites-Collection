@@ -14,6 +14,19 @@ function applyFilters() {
     const matchesSearch = title.includes(keyword);
 
     item.style.display = (matchesCategory && matchesSearch) ? "block" : "none";
+
+function applyFilters() {
+  const category = document
+    .querySelector(".filter-btn.active")
+    .getAttribute("data-filter");
+
+  items.forEach(item => {
+    const itemCategory = item.getAttribute("data-category");
+
+    const matchesCategory =
+      category === "all" || itemCategory === category;
+
+    item.style.display = matchesCategory ? "block" : "none";
   });
 }
 
