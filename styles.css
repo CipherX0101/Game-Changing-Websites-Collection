@@ -37,9 +37,24 @@ body {
   background-color: #333;
   color: #fff;
 }
+
+.search-bar {
+  text-align: center;
+  margin: 20px auto;
+}
+
+#search-input {
+  padding: 10px 16px;
+  width: 80%;
+  max-width: 500px;
+  border: 2px solid #1a1a1b;
+  border-radius: 8px;
+  font-size: 16px;
+}
   
 .gallery {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
